@@ -1,0 +1,40 @@
+const express = require('express')
+const app = express()
+const port = 5000
+var admin = require("firebase-admin");
+var fs = require("fs");
+var serviceAccount = require("./rjcrytpo-db-firebase-adminsdk-q5215-48c10abced.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://rjcrytpo-db.firebaseio.com"
+});
+
+
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
+
+
+var db = admin.firestore();
+
+var users = JSON.parse(fs.readFileSync('users.json', 'utf8'));
+app.get("/:name", function(req, res){
+  console.log(req.params.name);
+  var user = db.collection('users').doc(users[req.params.name].lookup_name);
+  var getDoc = user.get()
+    .then(doc => {
+      if (!doc.exists) {
+        console.log('No such document!');
+      } else {
+        console.log('Document data:', doc.data());
+      }
+    })
+    .catch(err => {
+      console.log('Error getting document', err);
+    });
+    res.send("Hi, " + req.params.name)
+});
+
+app.use(express.static('public'));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));

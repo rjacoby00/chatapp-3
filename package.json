@@ -1,0 +1,20 @@
+{
+  "name": "chatapp3",
+  "version": "1.3.0",
+  "description": "RJ chat app, recreated for the 3rd time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rjacoby",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "firebase-admin": "^6.1.0",
+    "grpc": "^1.11.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}

@@ -1,0 +1,30 @@
+.bblmsg {
+  position: relative;
+  display: block;
+  max-width: 50%;
+  min-width: 5%;
+  min-height: 10px;
+  background-color: #0076FF;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  overflow: hidden;
+}
+
+.bblmsg-name {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.bblmsg-msg {
+  position: relative;
+  display: block;
+}

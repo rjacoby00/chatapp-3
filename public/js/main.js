@@ -3,7 +3,7 @@ var socket = io();
 socket.on('chat message', function(msg){
   parsed = JSON.parse(msg);
   var elm = document.createElement('div');
-  if (parsed.User == document.getElementById('message').value) {
+  if (parsed.User == document.getElementById('user').value) {
     elm.classList.add("bblmsg");
     elm.innerHTML = "<span class='bblmsg-msg-self'>"+parsed.Message+"</span>";
     document.getElementById('dev').innerHTML = "Self";

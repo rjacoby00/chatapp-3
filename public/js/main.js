@@ -6,9 +6,11 @@ socket.on('chat message', function(msg){
   if (parsed.User == document.getElementById('message').value) {
     elm.classList.add("bblmsg");
     elm.innerHTML = "<span class='bblmsg-msg-self'>"+parsed.Message+"</span>";
+    document.getElementById('dev').innerHTML = "Self";
   } else {
     elm.classList.add("bblmsg");
     elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg'>"+parsed.Message+"</span>";
+    document.getElementById('dev').innerHTML = "Someone else";
   }
   document.getElementById('messages').appendChild(elm);
 });

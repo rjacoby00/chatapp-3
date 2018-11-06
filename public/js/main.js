@@ -3,8 +3,13 @@ var socket = io();
 socket.on('chat message', function(msg){
   parsed = JSON.parse(msg);
   var elm = document.createElement('div');
-  elm.classList.add("bblmsg");
-  elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg'>"+parsed.Message+"</span>";
+  if (parsed.User == document.getElementById('message').value) {
+    elm.classList.add("bblmsg");
+    elm.innerHTML = "<span class='bblmsg-msg-self'>"+parsed.Message+"</span>";
+  } else {
+    elm.classList.add("bblmsg");
+    elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg'>"+parsed.Message+"</span>";
+  }
   document.getElementById('messages').appendChild(elm);
 });
 

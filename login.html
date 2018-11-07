@@ -4,13 +4,66 @@
     <title>Chatapp Login</title>
     <style>
       
+      #title {
+        
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%) translateY(-50%);
+        font-family: sans-serif;
+        font-size: 40px;
+        color: #555;
+        z-index: 1;
+      }
+      
+      #input-container {
+        
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+      }
+      #username, #password {
+        
+        display: block;
+        font-size: 14px;
+        font-family: sans-serif;
+        padding: 5px;
+        border: solid 1px #DDD;
+        background-color: #DDD;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+      }
+      
+      #username::placeholder, #password::placeholder {
+        
+        color: #555;
+      }
+      
+      #username:focus, #password:focus {
+        
+        outline: none;
+      }
+      
+      #username {
+        
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      
+      #password {
+        
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      
     </style>
   </head>
   <body>
-    <div style="position: absolute; left: 50%; top: 20%; transform: translateX(-50%) translateY(-50%);">Log In</div>
-    <div id="input-container" style="position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);">
-      <input type="text" id="username" name="username" placeholder="username" style="display: block;" />
-      <input type="password" id="password" name="password" placeholder="password" style="display: block;" />
+    <div id="title">Log In</div>
+    <div id="input-container">
+      <input type="text" id="username" name="username" placeholder="username" />
+      <input type="password" id="password" name="password" placeholder="password" />
     </div>
   </body>
 </html>

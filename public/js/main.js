@@ -4,10 +4,10 @@ socket.on('chat message', function(msg){
   parsed = JSON.parse(msg);
   var elm = document.createElement('div');
   elm.classList.add("bblmsg");
-  elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg'>"+parsed.Message+"</span>";
   if (parsed.User == document.getElementById('user').value) {
-    elm.classList.add("bblmsg-self");
-    elm.innerHTML = "<span class='bblmsg-msg'>"+parsed.Message+"</span>";
+    elm.innerHTML = "<span class='bblmsg-msg bblmsg-other'>"+parsed.Message+"</span>";
+  } else {
+    elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg bblmsg-self'>"+parsed.Message+"</span>";
   }
   document.getElementById('messages').appendChild(elm);
 });

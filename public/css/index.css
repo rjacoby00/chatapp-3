@@ -3,6 +3,7 @@
   display: block;
   max-width: 50%;
   min-width: 5%;
+  width: fit-content;
   min-height: 10px;
   background-color: #EEE;
   border-radius: 10px;
@@ -22,6 +23,8 @@
   display: block;
   max-width: 50%;
   min-width: 5%;
+  width: fit-content;
+  min-height: 10px;
   background-color: #0076FF;
   border-radius: 10px;
   padding: 10px;

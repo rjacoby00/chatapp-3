@@ -15,6 +15,22 @@
   overflow: hidden;
 }
 
+.bblmsg-self {
+  position: relative;
+  float: right;
+  display: block;
+  max-width: 50%;
+  min-width: 5%;
+  background-color: #0076FF;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  overflow: hidden;
+}
+
 .bblmsg-name {
   position: absolute;
   display: block;

@@ -13,22 +13,25 @@
   font-size: 14px;
   color: #FFF;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .bblmsg-self {
   position: relative;
-  float: right;
   display: block;
   max-width: 50%;
   min-width: 5%;
-  background-color: #0076FF;
+  background-color: #EEE;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  margin-left: -10px;
   font-family: sans-serif;
   font-size: 14px;
-  color: #FFF;
+  color: #000;
   overflow: hidden;
+  box-sizing: border-box;
+  transform: translateX(100%);
 }
 
 .bblmsg-name {

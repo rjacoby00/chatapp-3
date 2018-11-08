@@ -9,7 +9,7 @@
   border-radius: 15px;
   border-bottom-left-radius: 0;
   padding: 6px;
-  padding-top: 30px;
+  padding-top: 24px;
   margin: 10px;
   font-family: sans-serif;
   font-size: 14px;
@@ -45,8 +45,9 @@
 .bblmsg-name {
   position: absolute;
   display: block;
-  top: 8px;
+  top: 3px;
   left: 10px;
+  font-size: 10px;
   font-weight: 500;
 }
 

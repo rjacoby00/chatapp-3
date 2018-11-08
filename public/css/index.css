@@ -7,6 +7,7 @@
   min-height: 10px;
   background-color: #EEE;
   border-radius: 10px;
+  border-bottom-left-radius: 0;
   padding: 10px;
   padding-top: 30px;
   margin: 10px;
@@ -27,6 +28,7 @@
   min-height: 10px;
   background-color: #0076FF;
   border-radius: 10px;
+  border-bottom-right-radius: 0;
   padding: 10px;
   margin: 10px;
   margin-left: -10px;

@@ -47,6 +47,9 @@
   display: block;
   top: 7px;
   font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .bblmsg-msg {

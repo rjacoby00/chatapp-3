@@ -1,54 +1,31 @@
 .bblmsg {
   position: relative;
   display: block;
-  max-width: 50%;
-  min-width: 5%;
-  width: fit-content;
-  min-height: 10px;
-  background-color: #EEE;
-  border-radius: 15px;
-  border-bottom-left-radius: 0;
-  padding: 6px;
-  padding-top: 26px;
   margin: 10px;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  color: #000;
-  overflow: hidden;
   box-sizing: border-box;
 }
 
 .bblmsg-self {
-  position: relative;
-  display: block;
-  max-width: 50%;
-  min-width: 1%;
-  width: fit-content;
-  min-height: 10px;
   background-color: #0076FF;
-  border-radius: 15px;
-  border-bottom-right-radius: 0;
-  padding: 6px;
   left: 100%;
-  margin: 10px;
-  margin-left: -10px;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 100;
   color: #FFF;
-  overflow: hidden;
-  box-sizing: border-box;
   transform: translateX(-100%);
+  border-bottom-right-radius: 0;
+}
+
+.bblmsg-other {
+  background-color: #EEE;
+  color: #000;
+  border-bottom-left-radius: 0;
 }
 
 .bblmsg-name {
-  position: absolute;
+  position: relative;
   display: block;
-  top: 7px;
-  max-width: 90%;
+  padding: 3px;
+  font-family: sans-serif;
   font-size: 10px;
-  overflow: hidden;
+  font-weight: 100;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -56,6 +33,18 @@
 .bblmsg-msg {
   position: relative;
   display: block;
+  max-width: 50%;
+  min-width: 1%;
+  width: fit-content;
+  min-height: 10px;
+  border-radius: 15px;
+  padding: 6px 8px;
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 body {

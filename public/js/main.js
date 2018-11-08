@@ -5,9 +5,9 @@ socket.on('chat message', function(msg){
   var elm = document.createElement('div');
   elm.classList.add("bblmsg");
   if (parsed.User == document.getElementById('user').value) {
-    elm.innerHTML = "<span class='bblmsg-msg bblmsg-other'>"+parsed.Message+"</span>";
+    elm.innerHTML = "<span class='bblmsg-msg bblmsg-self'>"+parsed.Message+"</span>";
   } else {
-    elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg bblmsg-self'>"+parsed.Message+"</span>";
+    elm.innerHTML = "<span class='bblmsg-name'>"+parsed.User+"</span><span class='bblmsg-msg bblmsg-other'>"+parsed.Message+"</span>";
   }
   document.getElementById('messages').appendChild(elm);
 });

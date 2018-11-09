@@ -108,12 +108,18 @@ body {
 
 #submit {
   background-color: #0076FF;
+  padding: 6px;
+  border-radius: 15px;
+}
+
+#submit:focus {
+  outline: none;
 }
 
 .material-icons-new {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   background-repeat: no-repeat;
   background-size: contain;
   color: #FFF;

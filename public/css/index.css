@@ -15,10 +15,24 @@
 }
 
 .bblmsg-other {
-  background-color: #EAEAEA;
+  background-color: #E6E5EB;
   color: #000;
   border-radius: 15px;
   border-bottom-left-radius: 0;
+}
+
+.bblmsg-self-repeat {
+  background-color: #0076FF;
+  left: 100%;
+  color: #FFF;
+  transform: translateX(-100%);
+  border-radius: 15px;
+}
+
+.bblmsg-other-repeat {
+  background-color: #E6E5EB;
+  color: #000;
+  border-radius: 15px;
 }
 
 .bblmsg-name {

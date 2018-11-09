@@ -68,12 +68,13 @@ body {
 #form {
   position: relative;
   margin-top: 10px;
-  left: 50%;
+  margin-left: 50%;
+  width: 100%;
   transform: translateX(-50%);
 }
 
 #user {
-  width: 5%;
+  width: 25%;
   border: solid 1px #999;
   background-color: #FFF;
   border-radius: 15px;

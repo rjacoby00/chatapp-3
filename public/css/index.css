@@ -105,3 +105,16 @@ body {
 #message:focus {
   outline: none;
 }
+
+#submit {
+  background-color: #0076FF;
+}
+
+.material-icons-new {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #FFF;
+}

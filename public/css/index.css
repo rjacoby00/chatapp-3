@@ -110,6 +110,7 @@ body {
   background-color: #0076FF;
   padding: 6px;
   border-radius: 15px;
+  border: none;
 }
 
 #submit:focus {

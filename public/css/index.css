@@ -89,6 +89,8 @@ body {
 }
 
 #user {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   position: absolute;
   left: 6px;
   top: 50%;
@@ -125,6 +127,8 @@ body {
 }
 
 #message {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   position: relative;
   width: 100%;
   border: none;

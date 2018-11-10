@@ -107,9 +107,10 @@ body {
 }
 
 #submit {
+  position: relative;
   background-color: #0076FF;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   border-radius: 15px;
   border: none;
 }
@@ -123,7 +124,7 @@ body {
   position: absolute;
   background-size: contain;
   color: #FFF;
-  font-size: 18px !important;
+  font-size: 20px !important;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);

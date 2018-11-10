@@ -119,9 +119,8 @@ body {
 
 .material-icons {
   display: inline-block;
-  width: 14px;
-  height: 14px;
   background-repeat: no-repeat;
   background-size: contain;
   color: #FFF;
+  font-size: 14px !important;
 }

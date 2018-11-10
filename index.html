@@ -13,9 +13,11 @@
   <div class="container">
     <div id="messages"></div>
     <div id="form">
-      <input type="text" id="user" placeholder="username"></input>
-      <input type="text" id="message" placeholder="message"></input>
-      <button id="submit"><i class="material-icons">arrow_upward</i></button>
+      <input type="text" id="user" placeholder="username" />
+      <div id="message-outer">
+        <input type="text" id="message" placeholder="message" />
+        <button id="submit"><i class="material-icons">arrow_upward</i></button>
+      </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>

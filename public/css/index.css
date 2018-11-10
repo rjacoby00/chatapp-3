@@ -81,6 +81,10 @@ body {
 }
 
 #user {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 25%;
   border: solid 1px #999;
   background-color: #FFF;
@@ -106,7 +110,7 @@ body {
   width: 60%;
   border: solid 1px #999;
   background-color: #FFF;
-  padding-right: 30px;
+  padding-right: 18px;
   border-radius: 15px;
   box-sizing: border-box;
 }

@@ -120,6 +120,7 @@ body {
   width: 60%;
   border: solid 1px #999;
   background-color: rgba(0,0,0,0);
+  padding: 0;
   padding-right: 18px;
   border-radius: 15px;
   box-sizing: border-box;
@@ -138,6 +139,7 @@ body {
   font-size: 14px;
   font-weight: 100;
   box-sizing: border-box;
+  margin: 0;
 }
 
 #message:focus {

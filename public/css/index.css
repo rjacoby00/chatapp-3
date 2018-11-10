@@ -95,7 +95,7 @@ body {
   transform: translateY(-50%);
   width: 25%;
   border: solid 1px #999;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,0.8);
   border-radius: 15px;
   padding: 6px 10px;
   font-family: sans-serif;
@@ -117,17 +117,18 @@ body {
   transform: translateY(-50%);
   width: 60%;
   border: solid 1px #999;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,0.8);
   padding-right: 18px;
   border-radius: 15px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #message {
   position: relative;
   width: 100%;
   border: none;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(255,255,255,0.8);
   padding: 6px 10px;
   font-family: sans-serif;
   font-size: 14px;

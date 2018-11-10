@@ -24,7 +24,8 @@ socket.on('chat message', function(msg){
   }
   document.getElementById('messages').appendChild(elm);
   lastUser =  parsed.User;
-  document.body.scrollTop = document.body.scrollHeight;
+  var cont = document.getElementsByClassName("container")[0];
+  cont.scrollTop = cont.scrollHeight;
 });
 
 document.getElementById('submit').addEventListener('click', function(){

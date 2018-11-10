@@ -66,11 +66,10 @@ body {
 }
 
 #form {
-  position: relative;
-  margin-top: 10px;
-  margin-left: 50%;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  transform: translateX(-50%);
+  height: 32px;
 }
 
 #user {
@@ -91,6 +90,11 @@ body {
 }
 
 #message-outer {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   width: 60%;
   border: solid 1px #999;
   background-color: #FFF;

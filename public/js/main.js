@@ -14,7 +14,7 @@ socket.on('chat message', function(msg){
     elm.innerHTML = "<span class='bblmsg-msg bblmsg-self'>"+parsed.Message+"</span>";
   } else {
     if (lastUser == parsed.User) {
-      last_messsge = document.getElementsByClassName('bblmsg-other')[document.getElementsByClassName('bblmsg-self').length-1];
+      last_messsge = document.getElementsByClassName('bblmsg-other')[document.getElementsByClassName('bblmsg-other').length-1];
       last_messsge.classList.remove("bblmsg-other");
       last_messsge.classList.add("bblmsg-other-repeat");
       elm.innerHTML = "</span><span class='bblmsg-msg bblmsg-other'>"+parsed.Message+"</span>";

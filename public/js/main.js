@@ -1,5 +1,6 @@
 var socket = io();
 var lastUser = '';
+var mobileTyping = false;
 
 socket.on('chat message', function(msg){
   parsed = JSON.parse(msg);
@@ -42,3 +43,20 @@ document.getElementById('message').addEventListener("keydown", function(event) {
     document.getElementById('submit').click();
     event.preventDefault();
 });
+
+function openType() {
+  mobileTyping = true;
+  var typeBar = document.getElementById("form");
+  var cont = document.getElementsByClassName("container")[0];
+  typeBar.style.bottom = "50%";
+  cont.style.paddingBottom = "calc(50%+40px)";
+}
+function closeType() {
+  if (mobileTyping === true) {
+    mobileTyping = false;
+    var typeBar = document.getElementById("form");
+    var cont = document.getElementsByClassName("container")[0];
+    typeBar.style.bottom = null;
+    cont.style.paddingBottom = null;
+  }
+}

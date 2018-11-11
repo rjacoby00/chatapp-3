@@ -48,22 +48,3 @@ document.getElementById('message').addEventListener("keydown", function(event) {
     document.getElementById('submit').click();
     event.preventDefault();
 });
-
-function openType() {
-  if (isMobile) {
-    mobileTyping = true;
-    var typeBar = document.getElementById("form");
-    var cont = document.getElementsByClassName("container")[0];
-    typeBar.style.bottom = "50%";
-    cont.style.paddingBottom = "calc(50%+40px)";
-  }
-}
-function closeType() {
-  if (isMobile && mobileTyping === true) {
-    mobileTyping = false;
-    var typeBar = document.getElementById("form");
-    var cont = document.getElementsByClassName("container")[0];
-    typeBar.style.bottom = null;
-    cont.style.paddingBottom = null;
-  }
-}
